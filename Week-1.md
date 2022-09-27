@@ -31,7 +31,7 @@ c. rm (remove) : Command untuk menghapus file atau directory (rm -R atau rm -d u
 a. git config global user.email rafipersonalporto@gmail.com (email yang digunakan harus sama dengan Github)
 b. git config global user.name "Rafi"
 c. git config --list untuk melihat hasil konfigurasi
-d. git ini (dilakukan pada folder yang dibuat) untuk membuka repository
+d. git init (dilakukan pada folder yang dibuat) untuk membuka repository
 e. git status untuk mengecek perubahan pada Git
 f. git add . untuk menambahkan file baru pada Git
 g. git commit -m "Pesan Commit" untuk menyimpan perubahan pada Git
