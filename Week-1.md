@@ -6,20 +6,20 @@
 - Filesystem mengatur bagaimana data disimpan di dalam sebuah system
 - Sistem operasi Windows & Unix-like menyusun file dan direktori menggunakan struktur yang bentuknya mirip tree
 - **Command untuk navigasi :**
-a. pwd (Print working directory) : Command untuk melihat current working directory
-b. ls (lists) : Command untuk melihat isi file yang ada di sebuah direktori
-c. cd <direktori> (change directory) : Command untuk berpindah direktori.
+1. pwd (Print working directory) : Command untuk melihat current working directory
+2. ls (lists) : Command untuk melihat isi file yang ada di sebuah direktori
+3. cd <direktori> (change directory) : Command untuk berpindah direktori.
 - **Command untuk membuat Files dan Direktori :**
-a. touch : Command untuk membuat sebuah file
-b. mkdir : Command untuk membuat sebuah direktori
+1. touch : Command untuk membuat sebuah file
+2. mkdir : Command untuk membuat sebuah direktori
 - **Command untuk Melihat isi files :**
-a. head : Command untuk melihat beberapa line awal dari sebuah file text
-b. tail : Command untuk melihat beberapa line akhir dari sebuah file text
-c. cat : Command untuk melihat isi sebuah file
+1. head : Command untuk melihat beberapa line awal dari sebuah file text
+2. tail : Command untuk melihat beberapa line akhir dari sebuah file text
+3. cat : Command untuk melihat isi sebuah file
 - **Command untuk menyalin, memindahkan, dan menghapus files & directory :**
-a. cp (copy) : Command untuk mengcopy files atau directory (cp -R untuk menyalin direktori)
-b. mv (move) : Command untuk memindahkan files atau directory (mv -R untuk memindahkan direktori) serta dapat digunakan untuk rename
-c. rm (remove) : Command untuk menghapus file atau directory (rm -R atau rm -d untuk menghapus direktori)
+1. cp (copy) : Command untuk mengcopy files atau directory (cp -R untuk menyalin direktori)
+2. mv (move) : Command untuk memindahkan files atau directory (mv -R untuk memindahkan direktori) serta dapat digunakan untuk rename
+3. rm (remove) : Command untuk menghapus file atau directory (rm -R atau rm -d untuk menghapus direktori)
 
 ## B. _GIT & GITHUB_
 - GIT merupakan tools untuk programmer dan sebagai version control system
@@ -28,15 +28,15 @@ c. rm (remove) : Command untuk menghapus file atau directory (rm -R atau rm -d u
 - Tujuan dari penggunaan Git dan Github yaitu agar kita bisa berkolaborasi mengerjakan proyek yang sama tanpa harus repot copy dan paste folder aplikasi yang terupdate
 - Git dan GitHub menangani commands secara berbeda. Developer yang menggunakan Git dapat menggunakan command-line tool, yaitu pengubah kode dan dapat digabungkan menuju perangkat lokal. Sedangkan, GitHub menyediakan interface grafis berbasis cloud sebagai tempat untuk melakukan seluruh tugas.
 - **Setup Awal Git :**
-a. git config global user.email rafipersonalporto@gmail.com (email yang digunakan harus sama dengan Github)
-b. git config global user.name "Rafi"
-c. git config --list untuk melihat hasil konfigurasi
-d. git init (dilakukan pada folder yang dibuat) untuk membuka repository
-e. git status untuk mengecek perubahan pada Git
-f. git add . untuk menambahkan file baru pada Git
-g. git commit -m "Pesan Commit" untuk menyimpan perubahan pada Git
-h. git push -u origin master / main untuk mengirim file pada remote repository
-i. git clone untuk mengambil repository lokal
+1. git config global user.email rafipersonalporto@gmail.com (email yang digunakan harus sama dengan Github)
+2. git config global user.name "Rafi"
+3. git config --list untuk melihat hasil konfigurasi
+4. git init (dilakukan pada folder yang dibuat) untuk membuka repository
+5. git status untuk mengecek perubahan pada Git
+6. git add . untuk menambahkan file baru pada Git
+7. git commit -m "Pesan Commit" untuk menyimpan perubahan pada Git
+8. git push -u origin master / main untuk mengirim file pada remote repository
+9. git clone untuk mengambil repository lokal
 
 ## C. _HTML_
 - HTML (Hypertext Markup Language) berfungsi untuk membuat kerangka dari sebuah website dan digunakan untuk menampilkan konten pada browser
@@ -100,9 +100,9 @@ i. git clone untuk mengambil repository lokal
 ```
 - CSS Comment memiliki fungsi yang sama dengan HTML Comment yaitu untuk memberikan penjelasan line dari code yang kita kerjakan (/* */)
 - Terdapat 3 cara penggunaan CSS :
-a. Inline Style : menambahkan CSS pada attribute element HTML
-b. Internal Style : menggunakan tag style di bagian head
-c, External Style : menggunakan file css terpisah dengan html
+1. Inline Style : menambahkan CSS pada attribute element HTML
+2. Internal Style : menggunakan tag style di bagian head
+3, External Style : menggunakan file css terpisah dengan html
 - . / titik : merupakan selector untuk tag html yang memiliki properti class
 - Contoh properti pada CSS : color, background-color
 - Cara menghubungkan / mengakses file CSS pada HTML
@@ -198,10 +198,10 @@ OUTPUT sum
 END
 ```
 - Jenis-jenis pseudocode :
-a. Procedural : Berpikir secara runtut
-b. Conditional : Percabangan kasus (if else)
-c. Looping : Proses yang sama berulang-ulang (for, while)
-d, Recursive : Algoritma yang memanggil method / function
+1. Procedural : Berpikir secara runtut
+2. Conditional : Percabangan kasus (if else)
+3. Looping : Proses yang sama berulang-ulang (for, while)
+4, Recursive : Algoritma yang memanggil method / function
 
 ## C. _Javascript Dasar_
 - Javascript adalah bahasa pemograman yang sangat powerful yang digunakan untuk logic pada sebuah website
@@ -210,43 +210,43 @@ d, Recursive : Algoritma yang memanggil method / function
 - Console log dapat digunakan untuk melakukan debugging (mengetahui error pada code) pada pemograman web dan cek logic pemograman web yang kita kembangkan
 - Tipe data merupakan klasifikasi yang kita berikan untuk berbagai macam data
 - 6 tipe data fundamental pada Javascript :
-a. number : tipe data yang mengandung semua angka termasuk angka desimal.
-b. string : grup karakter yang ada pada keyboard laptop/PC kita yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya
-c. boolean : tipe data yang hanya mempunyai 2 buah nilai yaitu TRUE dan FALSE
-d. null : tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai.
-e. undefined : tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai.
-f. object : koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya)
+1. number : tipe data yang mengandung semua angka termasuk angka desimal.
+2. string : grup karakter yang ada pada keyboard laptop/PC kita yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya
+3. boolean : tipe data yang hanya mempunyai 2 buah nilai yaitu TRUE dan FALSE
+4. null : tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai.
+5. undefined : tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai.
+6. object : koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya)
 - Variable merupakan tempat untuk menyimpan sebuah nilai
 - 3 cara mendefinisikan variabel pada Javascript : 
-a. var
-b. let
-c. const : variabel yang tidak dapat diubah nilainya
+1. var
+2. let
+3. const : variabel yang tidak dapat diubah nilainya
 - Assignment operator (=) digunakan untuk menyimpan sebuah nilai pada variabel
 - increment(++) atau decrement(--) untuk menambah atau mengurangi sebesar 1 nilai
 - Arithmetic operator adalah operator yang melibatkan operasi matematika (Tambah (+), Kuramg (-), Perkalian (*), Pembagian (/), Modulus (%) )
 - Comparison operator adalah operator yang membandingkan satu nilai dengan nilai lainnya yang memiliki hasil TRUE atau FALSE
 - Simbol comparison operator :
-a. Lebih kecil dari : <
-b. Lebih besar dari: >
-c. Lebih kecil atau sama dengan: <=
-d. Lebih besar atau sama dengan: >=
-e. Sama dengan: ===
-f. Tidak sama dengan: !==
+1. Lebih kecil dari : <
+2. Lebih besar dari: >
+3. Lebih kecil atau sama dengan: <=
+4. Lebih besar atau sama dengan: >=
+5. Sama dengan: ===
+6. Tidak sama dengan: !==
 - Logical operator biasa digunakan untuk sebuah CONDITIONAL pada pemograman yang memiliki hasil TRUE atau FALSE
 - Simbol dari Logical Operator adalah sebagai berikut:
-a. AND operator : &&
-b, OR operator: ||
-c. NOT operator: !
+1. AND operator : &&
+2, OR operator: ||
+3. NOT operator: !
 - Conditional merupakan statement percabangan yang menggambarkan sebuah kondisi
 - Beberapa contoh conditional : 
-a. if statement
-b. if else statement
-c. Switch case conditional : digunakan ketika kondisi percabangan terlalu banyak
+1. if statement
+2. if else statement
+3. Switch case conditional : digunakan ketika kondisi percabangan terlalu banyak
 - Looping merupakan statement yang mengulang sebuah instruksi hingga kondisi terpenuhi atau jika kondisi stop tercapai
 - Beberapa contoh Looping : 
-a. For Loop : digunakan ketika mengetahui seberapa banyak nilai pasti untuk pengulangannya
-b. While Loop : menjalankan instruksi pengulangan kondisi bernilai TRUE. Digunakan ketika tidak mengetahui jumlah pasti pengulangan
-c. Do While Loop
+1. For Loop : digunakan ketika mengetahui seberapa banyak nilai pasti untuk pengulangannya
+2. While Loop : menjalankan instruksi pengulangan kondisi bernilai TRUE. Digunakan ketika tidak mengetahui jumlah pasti pengulangan
+3. Do While Loop
 - Nested loop : membuat looping didalam looping. 
 
 
