@@ -201,7 +201,7 @@ END
 1. Procedural : Berpikir secara runtut
 2. Conditional : Percabangan kasus (if else)
 3. Looping : Proses yang sama berulang-ulang (for, while)
-4, Recursive : Algoritma yang memanggil method / function
+4. Recursive : Algoritma yang memanggil method / function
 
 ## C. _Javascript Dasar_
 - Javascript adalah bahasa pemograman yang sangat powerful yang digunakan untuk logic pada sebuah website
