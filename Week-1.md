@@ -31,7 +31,7 @@ c. rm (remove) : Command untuk menghapus file atau directory (rm -R atau rm -d u
 a. git config global user.email rafipersonalporto@gmail.com (email yang digunakan harus sama dengan Github)
 b. git config global user.name "Rafi"
 c. git config --list untuk melihat hasil konfigurasi
-d. git ini (dilakukan pada folder yang dibuat) untuk membuka repository
+d. git init (dilakukan pada folder yang dibuat) untuk membuka repository
 e. git status untuk mengecek perubahan pada Git
 f. git add . untuk menambahkan file baru pada Git
 g. git commit -m "Pesan Commit" untuk menyimpan perubahan pada Git
@@ -127,7 +127,7 @@ h1 {
   display: inline;
 }
 ```
-- Perbedaan antara ID dan Class adalah ID Name digunakan  jika hanya ada 1 elemen pada file/halaman HTML seperti header dan footer. Sedangkan Class Name digunakan ika akan ada beberapa element HTML yang memiliki styling/desain yang sama.
+- Perbedaan antara ID dan Class adalah ID Name digunakan  jika hanya ada 1 elemen pada file/halaman HTML seperti header dan footer. Sedangkan Class Name digunakan jika ada beberapa element HTML yang memiliki styling/desain yang sama.
 - Nested element : Parent and Child (konsep pada css)
 - Multiple selector digunakan agar codingan kita semakin efisien dan tidak berulang ulang
 ```sh
@@ -151,7 +151,7 @@ h1, p {
 }
 ```
 **FLEXBOX**
-- FlexFlexbox merupakan cara untuk mengatur layout serta dapat menyesuaikan layout secara otomatis.
+- Flexbox merupakan cara untuk mengatur layout serta dapat menyesuaikan layout secara otomatis.
 - Flexbox memiliki 1 parent dan beberapa child
 - flex-direction digunakan untuk mengatur letak item child.
 - flex-wrap digunakan untuk membatasi jumlah item children dalam 1 line
