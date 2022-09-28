@@ -235,7 +235,7 @@ END
 - Logical operator biasa digunakan untuk sebuah CONDITIONAL pada pemograman yang memiliki hasil TRUE atau FALSE
 - Simbol dari Logical Operator adalah sebagai berikut:
 1. AND operator : &&
-2, OR operator: ||
+2. OR operator: ||
 3. NOT operator: !
 - Conditional merupakan statement percabangan yang menggambarkan sebuah kondisi
 - Beberapa contoh conditional : 
