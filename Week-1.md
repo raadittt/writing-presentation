@@ -187,12 +187,15 @@ h1, p {
 ```
 - Contoh pseudocode :
 ```sh
-Deklarasi
-Var sisi,keliling: integer; 
-Implementasi
-Read(sisi);
-Keliling = sisi*4;
-Write(keliling);
+BEGIN
+NUMBER s1, s2, sum
+OUTPUT("Input number1:")
+INPUT s1
+OUTPUT("Input number2:") 
+INPUT s2
+sum=s1+s2
+OUTPUT sum
+END
 ```
 - Jenis-jenis pseudocode :
 a. Procedural : Berpikir secara runtut
