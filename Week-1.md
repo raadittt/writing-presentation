@@ -60,8 +60,8 @@ i. git clone untuk mengambil repository lokal
 ```
 - HTML Element : Opening tag, Content, dan Closing tag
 - HTML attribute merupakan properties dari HTML Element (id, class)
-- HTML Comment berfungsi untuk memberikan penjelasan line dari code yang kita kerjakan <!-- -->
-- Terdapat Single tag dan Double tag pada HTML (Single tag : <br>, Double tag : <h2> </h2>)
+- HTML Comment berfungsi untuk memberikan penjelasan line dari code yang kita kerjakan
+- Terdapat Single tag dan Double tag pada HTML
 - Untuk menampilkan file HTML secara live kita bisa menginstall extension bernama "Live Server" pada Visual Studio Code
 - Semantic HTML yaitu menggunakan elemen HTML sesuai kebutuhan konten seperti header, footer, dan nav
 - Contoh penggunaan Semantic HTML tag : 
