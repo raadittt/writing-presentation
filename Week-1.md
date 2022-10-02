@@ -89,7 +89,7 @@
 ```
 - Kita bisa menggunakan **Netlify** untuk melakukan deploy terhadap HTML yang sudah kita buat agar bisa diakses oleh semua orang
 
-## C. _CSS_
+## D. _CSS_
 - CSS (Cascading Style Sheets) berfungsi untuk mendesain sebuah halaman website.
 - kita bisa mengubah warna, menggunakan font custom, editing text format, dan mengatur tata letak dengan menggunakan CSS
 - Struktur CSS, yaitu :
@@ -164,7 +164,7 @@ h1, p {
 - flex-shrink adalah properti yang membuat size suatu item child mengecil secara relatif terhadap item child lainnya.
 - flex-basis adalah properti yang sama fungsinya seperti width yaitu mengatur width dari setiap item child
 
-## C. _Algoritma & Pseudocode_
+## E. _Algoritma & Pseudocode_
 - Algoritma merupakan proses menyelsaikan suatu masalah yang dilakukan secara logis dan sistematis
 - Belajar algoritma sama dengan mengingat kembali alur berfikir yang terstruktur
 - Mempelajari algoritma merupakan hal penting di dalam dunia programming
@@ -203,7 +203,7 @@ END
 3. Looping : Proses yang sama berulang-ulang (for, while)
 4. Recursive : Algoritma yang memanggil method / function
 
-## C. _Javascript Dasar_
+## F. _Javascript Dasar_
 - Javascript adalah bahasa pemograman yang sangat powerful yang digunakan untuk logic pada sebuah website
 - Javascript juga dapat membuat website menjadi interaktif dan dinamis
 - Contoh syntax pada javascript : Alert(), Confirm(), dan Prompt()
