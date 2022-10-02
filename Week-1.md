@@ -247,7 +247,27 @@ END
 1. For Loop : digunakan ketika mengetahui seberapa banyak nilai pasti untuk pengulangannya
 2. While Loop : menjalankan instruksi pengulangan kondisi bernilai TRUE. Digunakan ketika tidak mengetahui jumlah pasti pengulangan
 3. Do While Loop
-- Nested loop : membuat looping didalam looping. 
+- Nested loop : membuat looping didalam looping.
+  - **STATIC METHODS** : 
+
+Nomor.isNaN()
+
+    Tentukan apakah nilai yang diteruskan adalah NaN.
+Nomor.Terbatas()
+
+    Tentukan apakah nilai yang diteruskan adalah bilangan berhingga.
+Nomor.adalahInteger()
+
+    Tentukan apakah nilai yang diteruskan adalah bilangan bulat.
+Nomor.isSafeInteger()
+
+    Tentukan apakah nilai yang diteruskan adalah bilangan bulat aman (angka antara -(253 - 1) dan 253 - 1).
+Nomor.parseFloat()
+
+    Ini sama dengan fungsi parseFloat() global.
+Nomor.parseInt()
+
+    Ini sama dengan fungsi parseInt() global. 
 
 
 
