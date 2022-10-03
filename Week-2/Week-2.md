@@ -939,7 +939,6 @@ document.getElementById("contoh").textContent = "Ini adalah contoh"
 document.getElementById("contoh").innerHTML = "    <li>Contoh</li> <li>Contoh</li> <li>Contoh</li>"
 ```
 - Output : 
-
 ![img-2](inner-html.jpg)
 
 C. **Membuat Element HTML** :
