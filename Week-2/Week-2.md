@@ -1,4 +1,4 @@
-# Week 1
+# Week 2
 
 ## A. _Javascript Dasar Scope_
 
