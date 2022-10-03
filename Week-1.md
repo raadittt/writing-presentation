@@ -247,4 +247,21 @@ END
 1. For Loop : digunakan ketika mengetahui seberapa banyak nilai pasti untuk pengulangannya
 2. While Loop : menjalankan instruksi pengulangan kondisi bernilai TRUE. Digunakan ketika tidak mengetahui jumlah pasti pengulangan
 3. Do While Loop
+<<<<<<< HEAD
 - Nested loop : membuat looping didalam looping. 
+=======
+- Nested loop : membuat looping didalam looping. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> f99ffbe4d22242d41f98188795648f03af6aa57c
