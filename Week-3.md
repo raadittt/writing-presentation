@@ -365,6 +365,12 @@ reject()  -----------> .catch(error)
 ## F. _Javascript Intermediate Web Storage_
 - Sebelum HTML5, data aplikasi harus disimpan dalam cookie, termasuk dalam setiap permintaan server. web storage termasuk lebih aman, dan sejumlah besar data dapat disimpan secara lokal, tanpa memengaruhi kinerja situs web.
 - Tidak seperti cookie, batas penyimpanan jauh lebih besar (minimal 5MB) dan informasi tidak pernah ditransfer / dikirim ke server.
+- Maksimum data yang dapat disimpan dalam cokies adalah 4Kb.
+- Kekurangan cookies
+  1. Setiap kita mengakses situs web, cookies juga kembali dikirim sehingga memperlambat aplikasi web kamu dengan mengirimkan data yang sama.
+  2. Cookies disertakan pada setiap HTTP request, sehingga mengirimkan data yang tidak dienkripsi melalui internet, maka saat kita ingin menyimpan data dalam cookies kita harus mengenkripsinya terlebih dahulu.
+  3. Cookies hanya dapat menyimpan data sebanyak 4KB.
+  4. Cookies juga memiliki tanggal kadaluarsa. Tanggal ini telah ditentukan sehingga web browser bisa menghapus cookies jika tanggal sudah kadaluarsa atau tidak dibutuhkan.
 - Penyimpanan web adalah per asal (per domain dan protokol). Semua halaman, dari satu asal, dapat menyimpan dan mengakses data yang sama.
 - HTML Web Storage menyediakan dua objek untuk menyimpan data pada klien :
 1. window.localStorage : menyimpan data tanpa tanggal kedaluwarsa.
@@ -409,7 +415,11 @@ Penjelasan :
 ```
 - Kita bisa menghapus "contoh" pada localStorage dengan :
 ```js
+// Menghapus berdasarkan 'key'
 localStorage.removeItem("contoh");
+
+// menghapus seluruh item pada local storage sekaligus
+localStorage.clear();
 ```
 - Pasangan nama/nilai selalu disimpan sebagai string.
 - Objek sessionStorage sama dengan objek localStorage, kecuali objek tersebut menyimpan data hanya untuk satu sesi. Data dihapus ketika pengguna menutup tab browser tertentu.
@@ -435,4 +445,11 @@ if (typeof(Storage) !== "undefined") {
 </body>
 </html>
 <!-- Output : Rafi -->
+```
+```js
+// Menghapus berdasarkan 'key'
+sessionStorage.removeItem("contoh");
+
+// menghapus seluruh item pada local storage sekaligus
+sessionStorage.clear();
 ```
