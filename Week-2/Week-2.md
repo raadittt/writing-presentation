@@ -1,4 +1,4 @@
-# Week 1
+# Week 2
 
 ## A. _Javascript Dasar Scope_
 
@@ -938,8 +938,8 @@ document.getElementById("contoh").textContent = "Ini adalah contoh"
 ```js
 document.getElementById("contoh").innerHTML = "    <li>Contoh</li> <li>Contoh</li> <li>Contoh</li>"
 ```
-- Output : 
-
+- Output :
+ 
 ![img-2](inner-html.jpg)
 
 C. **Membuat Element HTML** :
