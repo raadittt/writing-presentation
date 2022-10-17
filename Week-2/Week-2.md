@@ -995,9 +995,3 @@ button.onclick = function() {alert(input.value) }
 - Output (ketika button sudah diklik) : 
 
 ![img-4](addeventlistener.JPG)
-
- 
-
-
-
-
