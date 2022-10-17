@@ -1,4 +1,4 @@
-# Week 3
+# Week 4
 
 ## A. _JavaScript Intermediate Asynchronous_
 
@@ -161,7 +161,9 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 7. 2 kode branch dispisahkan dengan tanda ==== , lalu tugas kita adalah menghapus salah satu dari kode tersebut
    ![img-1](conflict.JPG)
+   
    **MENJADI**
+   
    ![img-2](conflict2.JPG)
 8. Lalu kita lakukan commit kembali untuk perubahan yang baru saja kita lakukan
 
