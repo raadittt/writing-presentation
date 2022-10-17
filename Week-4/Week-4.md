@@ -1,4 +1,4 @@
-# Week 4
+# Week 3
 
 ## A. _JavaScript Intermediate Asynchronous_
 
@@ -68,7 +68,7 @@ const getData = async () => {
 };
 ```
 
-## B. _Git & Github Lanjutan_
+## C. _Git & Github Lanjutan_
 
 - GIT merupakan tools untuk programmer dan sebagai version control system
 - Tugas dari version control system yaitu mencatat setiap perubahan pada File (termasuk code yang kita buat) pada suatu proyek baik dikerjakan secara individu maupun tim.
@@ -172,7 +172,7 @@ git commit -m "revisi conflict"
 
 9. Maka conflict akan menghilang
 
-## C. _Responsive Web Design_
+## D. _Responsive Web Design_
 
 - Responsive Web Design digunakan agar desain website kita dapat diakses menggunakan device dengan jenis apapun karena ketika kita membuat sebuah aplikasi, kita juga harus memikirkan device yang digunakan oleh user kita seperti laptop dan smartphone
 - Kita bisa menggunakan Chrome Dev Tools pada browser chrome sebagai tools dari Responsive Web Design dengan Ctrl + Shift + J, maka akan menghasilkan output :
@@ -215,6 +215,57 @@ git commit -m "revisi conflict"
   margin: 20%;
 }
 ```
+
+- Penjelasan :
+
+```sh
+Ketika kita menginginkan sebuah child element memiliki 20% lebar parent sebagai marginnya sehingga tidak akan mengisi keseluruhan parent. Ketika ukuran parent berubah, maka margin juga akan berubah.
+```
+
+- Untuk memudahkan dalam membuat Responsive Web Design, kita dapat menggunakan media query.
+- Terdapat 2 jenis media query untuk Responsive Web Design, yaitu :
+
+1. max-width
+2. min-width
+
+- Contoh :
+
+```css
+@media screen and (max-width: ukuran-pixel) {
+}
+```
+
+- Contoh implementasi dari media query :
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tes.css" />
+  </head>
+  <body></body>
+</html>
+```
+
+```css
+@media screen and (max-width: 400px) {
+  body {
+    background-color: aqua;
+  }
+}
+```
+
+- Output :
+
+![img-5](mediaquery.JPG)
+**Tampilan web ketika width > 400px**
+
+![img-6](mediaquery2.JPG)
+**Tampilan web ketika width < 400px**
 
 - Grid merupakan susunan kerangka yang dibangun atas garis dengan posisi vertikal dan horizontal, grid dipergunakan sebagai alat bantu untuk menyusun atau mengatur objek dalam kontek perencanaan dalam ruang gambar dua dimensi.
 - Contoh implementasi Grid :
@@ -279,7 +330,7 @@ git commit -m "revisi conflict"
 }
 ```
 
-## D. _Bootstrap 5_
+## E. _Bootstrap 5_
 
 - Bootstrap merupakan salah satu andalan para developer ketika membuat sebuah website karena Bootstrap dapat membuat website dengan sangat cepat dan mudah.
 - Bootstrap adalah framework HTML, CSS, dan JavaScript yang berfungsi untuk mendesain website responsive dengan cepat dan mudah. Bootstrap diciptakan pada tahun 2011 oleh Mark Otto dan Jacob Thornton dari Twitter.
@@ -305,3 +356,50 @@ git commit -m "revisi conflict"
 16. Progress Bar
 17. Panels
 18. Responsive Embed
+
+- Contoh implementasi dari penggunaan bootstrap (content dan component serta responsive) :
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="background-color: AntiqueWhite">
+          <h1><center>Judul Halaman</center></h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3" style="background-color: GreenYellow">
+          <h2>Contoh Sidebar</h2>
+          <p>Opsi 1</p>
+          <p>Opsi 2</p>
+          <p>Opsi 3</p>
+          <p>Opsi 4</p>
+        </div>
+        <div class="col-md-9" style="background-color: LightCyan">
+          <h2>Konten</h2>
+          <p>Konten website dapat diisi pada bagian ini</p>
+        </div>
+      </div>
+      <div class="row" style="background-color: MediumPurple">
+        <div class="col-md-12">
+          <h2><center>Footer</center></h2>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
+
+- Output :
+
+![img-7](bustrep.JPG)
+  
