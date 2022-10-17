@@ -1,4 +1,4 @@
-# Week 3
+# Week 4
 
 ## A. _JavaScript Intermediate Asynchronous_
 
@@ -68,7 +68,7 @@ const getData = async () => {
 };
 ```
 
-## C. _Git & Github Lanjutan_
+## B. _Git & Github Lanjutan_
 
 - GIT merupakan tools untuk programmer dan sebagai version control system
 - Tugas dari version control system yaitu mencatat setiap perubahan pada File (termasuk code yang kita buat) pada suatu proyek baik dikerjakan secara individu maupun tim.
@@ -161,9 +161,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 7. 2 kode branch dispisahkan dengan tanda ==== , lalu tugas kita adalah menghapus salah satu dari kode tersebut
    ![img-1](conflict.JPG)
-   
    **MENJADI**
-   
    ![img-2](conflict2.JPG)
 8. Lalu kita lakukan commit kembali untuk perubahan yang baru saja kita lakukan
 
@@ -174,7 +172,7 @@ git commit -m "revisi conflict"
 
 9. Maka conflict akan menghilang
 
-## D. _Responsive Web Design_
+## C. _Responsive Web Design_
 
 - Responsive Web Design digunakan agar desain website kita dapat diakses menggunakan device dengan jenis apapun karena ketika kita membuat sebuah aplikasi, kita juga harus memikirkan device yang digunakan oleh user kita seperti laptop dan smartphone
 - Kita bisa menggunakan Chrome Dev Tools pada browser chrome sebagai tools dari Responsive Web Design dengan Ctrl + Shift + J, maka akan menghasilkan output :
@@ -332,7 +330,7 @@ Ketika kita menginginkan sebuah child element memiliki 20% lebar parent sebagai 
 }
 ```
 
-## E. _Bootstrap 5_
+## D. _Bootstrap 5_
 
 - Bootstrap merupakan salah satu andalan para developer ketika membuat sebuah website karena Bootstrap dapat membuat website dengan sangat cepat dan mudah.
 - Bootstrap adalah framework HTML, CSS, dan JavaScript yang berfungsi untuk mendesain website responsive dengan cepat dan mudah. Bootstrap diciptakan pada tahun 2011 oleh Mark Otto dan Jacob Thornton dari Twitter.
