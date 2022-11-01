@@ -412,6 +412,10 @@ tes.get("/dua", (req, res) => {
    };
    ```
 ## D. _Design Database with MySQL_
+- 3 Macam Relasi : 
+   - One to One : Relasi dimana suatu baris tabel A hanya berhubungan dengan suatu baris tabel B.
+   - One to Many : Relasi dimana suatu baris di table A memiliki relasi di beberapa baris di table B.
+   - Many to Many : Relasi dimana setiap lebih dari satu baris data dari tabel A berhubungan dengan lebih dari satu baris data pada tabel B.
 - Studi kasus yang digunakan : Pemesanan di Sebuah Restoran
 - Entity yang digunakan : 
 1. makanan
