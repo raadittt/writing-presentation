@@ -275,24 +275,29 @@
      const KEY = "qwfuiasidfiuasuif";
      const token = jwt.sign({ email }, KEY);
      ```
+
 ## C. _Sequalize_
+
 - Sequelize adalah promise-based ORM untuk nodejs. ORM (Object Relational Maping) adalah sebuah tool yang kita gunakan sebagai cara kita melakukan interaksi dengan database pilihan kita tanpa harus mempelajari domain spesific language kita hanya berinteraksi dengan pertara api yang sudah disediakan. Ketika pengembangan nanti kita tidak perlu melakukan perubahan konteks saat menuliskan kode karena kita melakukan interaksinya menggunakan bahasa javascript melalui api yang sudah disediakan oleh Sequelize.
 - Salah satu fitur yang terdapat pada Sequelize yaitu dapat mengambil API yang sama pada database yang berbeda.
 - Object Relational Mapping (ORM) adalah salah satu teknik untuk memetakan basisdata relasional ke model objek. Dari hasil penelitian disimpulkan bahwa Hibernate mampu melakukan pemetaan serta menyederhanakan proses penyimpanan dan pengambilan data objek.
-- Gambaran ORM : 
+- Gambaran ORM :
 
   ![img-11](orm.png)
-- Instalasi Sequelize-cli : 
+
+- Instalasi Sequelize-cli :
   ```js
   npm install -g sequelize-cli
   ```
 - Ketika kita melakukan inisiasi project kita pertama perlu menginstall sequelize menggunakan npm install sequelize dan perlu menginstall driver sql yang kita butuhkan :
+
   ```js
   npm install sequelize
 
   npm install mysql2
   ```
-- Sequelize init : 
+
+- Sequelize init :
   ```js
   npx sequelize-cli init
   ```
@@ -300,7 +305,118 @@
   ```js
   npx sequelize-cli db:migrate
   ```
-- Kita juga bisa undo ketika ada kesalahan : 
+- Kita juga bisa undo ketika ada kesalahan :
   ```js
   npx sequelize-cli db:migrate:undo
   ```
+
+## D. _Database_
+
+- Database adalah kumpulan data yang terorganisir, yang umumnya disimpan dan diakses secara elektronik dari suatu sistem komputer. Pada saat database menjadi semakin kompleks, maka pangkalan data dikembangkan menggunakan teknik perancangan dan pemodelan secara formal.
+- Untuk membuat Database diperlukan sebuah software yang dinamakan dengan DBMS(Database Management System).
+- DBMS adalah software yang dapat digunakan oleh user untuk berkomunikasi dengan data yang ada dalam media penyimpanan.
+- Table adalah kumpulan value yang dibangun oleh baris dan kolom, yang didalamnya berisikan atribut dari sebuah data.
+- Field adalah kolom dari sebuah tabel dimana masing-masing field memiliki tipe data masing-masing.
+- Record merupakan kumpulan nilai yang saling terkait. Record merupakan isi dari sebuah tabel.
+- SQL adalah sebuah bahasa yang digunakan untuk mengakses data dalam basis data relasional. Bahasa ini secara de facto merupakan bahasa standar yang digunakan dalam manajemen basis data relasional. Saat ini hampir semua server basis data yang ada mendukung bahasa ini untuk melakukan manajemen datanya.
+- SQL adalah Bahasa Query yang digunakan untuk melakukan interaksi di RDMS (Relational Database Management System).
+- DDL (Data Definition Languange) merupakan sekumpulan set perintah yang bertujuan untuk mendefinisikan atribut – atribut database, tabel, atribut kolom (field), maupun batasan – batasan terhadap suatu atribut dan relasi/hubungan antar tabel.
+- Yang termasuk ke dalam DDL, yaitu :
+
+  1. Alter :
+
+     - Digunakan untuk mengubah struktur dari tabel yang ada, seperti untuk menambahkan atau menghapus kolom/fiel,membuat atau menghapus primary key, mengubah jenis kolom/field yang ada, juga mengubah kolom atau nama tabel.
+     - Contoh :
+       ```sql
+       ALTER TABLE 'nama tabel' ADD primary key ('nama field')
+       ```
+
+  2. Drop :
+
+     - Perintah Drop digunakan untuk menghapus Database, Table, dan View atau Index.
+     - Contoh :
+       ```sql
+       DROP TABLE 'nama tabel'
+       ```
+
+- Data Manilation Language (DML) merupakan bahasa basis data yang dipergunakan untuk melakukan modifikasi dan retrieve (pengambilan) data pada suatu basis data.
+- Yang termasuk kedalam DML, yaitu :
+
+  1. SELECT :
+
+     - Digunakan untuk menyeleksi data berdasarkan syarat yang diberikan.
+     - Contoh :
+       ```sql
+       SELECT * FROM 'nama tabel'
+       ```
+
+  2. INSERT :
+
+     - Digunakan untuk memasukkan data ke kolom-kolom yang terdapat pada tabel/view.
+     - Contoh :
+       ```sql
+       INSERT INTO 'nama tabel' VALUES '(value1, value2, ...... , valueX)
+       ```
+
+- Tipe data pada MySQL :
+  1. Number : int, float, decimal
+  2. String : char, varchar, text, enum
+  3. boolean : TRUE dan FALSE
+  4. Date time : DATE, DATETIME, TIME, timestamp
+  5. Data type lain : DEFAULT, NULL
+- Jenis key pada MySQL : 
+  1. Primary key : Sebuah key yang berfungsi untuk membedakan antara baris satu dengan baris lain pada tabel dan bersifat unik atau berbeda setiap barisnya.
+  2. Foreign key : Sebuah atribut atau gabungan atribut yang terdapat dalam suatu tabel yang digunakan untuk menciptakan hubungan atau relasi antara dua tabel.
+- List beberapa database Command : 
+  1. **SHOW DATABASE** : untuk menunjukkan semua list yang ada pada database mysql.
+  2. **CREATE DATABASE 'nama database'** : Untuk membuat database baru.
+      - Contoh :
+        ```sql
+        CREATE DATABASE mahasiswa
+        ```
+  3. **USE 'nama database'** : Untuk menggunakan database yang sudah kita buat.
+        - Contoh :
+          ```sql
+          USE mahasiswa
+          ```
+  4. **DROP DATABASE 'nama database** : Untuk menghapus database yang ada pada MySQL.
+        - Contoh :
+            ```sql
+            DROP DATABASE mahasiswa
+            ```
+  5. **SHOW TABLES** : Untuk menunjukkan / melihat semua tabel yang ada pada database kita.
+  6. **CREATE TABLE 'nama tabel'** : Untuk membuat tabel baru pada database.
+        - Contoh :
+            ```sql
+            CREATE TABLE mahasiswa
+            ```
+  7. **DROP TABLE 'nama tabel** : Untuk menghapus tabel yang ada pada suatu database.
+        - Contoh :
+            ```sql
+            DROP TABLE mahasiswa
+            ```
+  8. **WHERE** : Digunakan untuk mencari data dengan kondisi tertentu
+    - Contoh : 
+      ```sql
+      SELECT score FROM mahasiswa WHERE id = 1
+      ```
+  9. **AND** : Menampilkan record jika semua kondisi dipisahkan oleh AND adalah benar.
+  10. **OR** : Menampilkan record jika ada kondisi yang dipisahkan oleh OR adalah benar.
+  11. **NOT** : Digunakan untuk mencari query yang tidak ada dalam kondisi yang di definisikan.
+  12. **ORDER BY** : Digunakan untuk mengurutkan hasil set data dalam urutan dari “kecil” ke “besar” atau dari “A” ke “Z”, atau sebaliknya.
+  13. **GROUP BY** : Digunakan untuk mengelompokkan data dalam sebuah kolom yang ditunjuk.
+  14. **LIMIT** : Digunakan untuk membatasi berapa query yang akan dimunculkan dengan urutan dari atas.
+      - Contoh : 
+        ```sql
+        SELECT * FROM mahasiswa LIMIT 1
+        ```
+  15. **UPDATE** : Digunakan untuk melakukan perbaruan data di table.
+        - Contoh : 
+          ```sql
+          UPDATE mahasiswa SET nama ='Rafi', umur = 20 WHERE id = 1 
+          ```
+  16. **DELETE** : Digunakan untuk melakukan penghapusan data
+      - Contoh : 
+        ```sql
+        DELETE FROM mahasiswa WHERE id = 1
+        ```
