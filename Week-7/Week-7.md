@@ -31,7 +31,7 @@
   ```
   - Maka akan terbentuk file user.js pada file models yang berisi :
 
-    ![img](model.jpg)
+    ![img](model.JPG)
 - Selanjutnya kita bisa menggunakan generate dan cek pada database sehingga dapat digunakan untuk penyimpanan DB
   ```js
   npx sequelize-cli db:migrate
@@ -42,7 +42,7 @@
   ```
 - Kita bisa menggunakan Mysql Workbench untuk cek apakah kita berhasil melakukan generate / tidak. Ketika kita berhasil melakukan generate maka kita dapat melihat pada database terdapat 1 tabel baru yang bernama users dan sequelizemeta.
 
-  ![img](tabel.jpg)
+  ![img](tabel.JPG)
 
 - Seed merupakan bawaan dari sequelize, dimana seed berfungsi untuk memberikan data awal / data dummy.
   ```js
@@ -50,7 +50,7 @@
   ```
 - Ketika berhasil melakukan generate maka kita dapat melakukan pengisian data seed (menggunakan **bulkInsert**) didalam file seed generator (up untuk mengisi data, down untuk menghapus data seed).
 
-  ![img](seed.jpg)
+  ![img](seed.JPG)
 
 - Lalu kita jalankan generate seed dengan sequelize
   ```js
@@ -62,13 +62,13 @@
   ```
 - Ketika kita berhasil melakukan generate, kita bisa cek pada database bahwa data kita telah berhasil di insert ke db (disini saya cek menggunakan MySQL Workbench)
 
-  ![img](cekseed.jpg)
+  ![img](cekseed.JPG)
 
 - Untuk mendapatkan data yang sudah kita buat, kita bisa melakukan :
   - Membuat file user.router.js
-    ![img](router.jpg)
+    ![img](router.JPG)
   - Setelah itu kita sambungkan file router tersebut dengan controller agar terlihat lebih rapi (user.controller.js) :
-    ![img](controller.jpg)
+    ![img](controller.JPG)
   - Pada file controller kita bisa membuat syntax untuk mendapatkan semua data user (getDataUser) yang sudah kita bisa serta bisa mencari data user berdasarkan id (getDataByID).
 
 ## B. _MongoDB_
@@ -80,13 +80,13 @@
 - Document merupakan unit terkecil yang berada pada MongoDB
 - Contoh bentu data pada MongoDB :
 
-  ![img](datamongo.jpg)
+  ![img](datamongo.JPG)
 
 - Kita dapat menggunakan GUI Tools Official dari MongoDB yaitu MongoDB Compass
 - Untuk melihat database yang aktif, bisa gunakan db pada MongoDB shell
 - Untuk melihat daftar database bisa menggunakan show dbs
 
-  ![img](showdbs.jpg)
+  ![img](showdbs.JPG)
 
 - Kita bisa gunakan db.createCollections("Nama Collection") untuk menambahkan Collection baru.
 - Kita bisa gunakan db.'nama db'.insert({'nama atribut'}) untuk menambahkan data pada Collection.
@@ -98,10 +98,10 @@
 - Embedding yaitu ketika memasukan semua data yang terkait dalam satu dokumen. Sedangkan Referencing yaitu ketika hanya memasukan data sebagian saja tidak keseluruhan.
 - Contoh dari Embedding :
 
-  ![img](embed.jpg)
+  ![img](embed.JPG)
 - Contoh dari Referencing :
 
-  ![img](reference.jpg)
+  ![img](reference.JPG)
 - Relasi dalam MongoDB :
   - One to One : Lebih baik jika menggunakan Embedded
   - One to Many : Lebih baik jika menggunakan Reference
@@ -115,15 +115,15 @@
   ```
 - Membuat koneksi dengan MongoDB database :
   - Contoh : 
-    ![img](mongoosedb.jpg)
+    ![img](mongoosedb.JPG)
 
-    ![img](appjs.jpg)
+    ![img](appjs.JPG)
 - Lalu kita bisa jalankan file app.js untuk mengetahui berhasil terkoneksi ke database / tidak
 
-  ![img](dbcomplete.jpg)
+  ![img](dbcomplete.JPG)
 - Mendefinisikan sebuah Schema serta tipe data untuk setiap field yang akan digunakan. :
 
-  ![img](schema.jpg)
+  ![img](schema.JPG)
 - Kita juga bisa memberikan validasi data, seperti untuk field yang wajib diisi dengan menambahkan 'required: true'.
 - Lalu pada file controller, kita tambahkan potongan kode dibawah ini untuk menggunakan model **Todo** dari Schema yang sudah kita buat dengan tujuan digunakan untuk CRUD.
 
